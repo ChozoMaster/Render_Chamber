@@ -177,8 +177,8 @@ blockquote {
     border-top: 1px solid #bfbbbb;
 }
 
-.content{
-    padding-left: 100px;
+#padded-content{
+    padding-top: 25px;
 }
 /***********************
 ********* Utility ******
@@ -197,7 +197,7 @@ blockquote {
 ************************/
 
 .footer {
-    position: relative
+    position: relative;
     height: 65px;
     margin-top: -65px; /* negative value of footer height */
     clear:both;
@@ -268,16 +268,19 @@ blockquote {
     line-height: 24px;
     display: inline-block;
     text-align: center;
+    transition:color 0.5s ease;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
     background-color: #fff;
     color: #2e2e2e;
+    transition:all 0.5s ease;
 }
 
 .navbar-inverse {
     border: none;
     background: #2e2e2e;
+    transition:color 0.5s ease;
 }
 
 .navbar-inverse .navbar-brand {
@@ -294,6 +297,7 @@ blockquote {
 .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #fff;
     color: #2e2e2e;
+    transition:all 0.3s ease;
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
@@ -350,10 +354,17 @@ blockquote {
 ********* Progress-Bar ******
 ************************/
 
-.progress-bar-test{
+.progress-bar-red{
     background-color: #c52d2f;
 }
 
+.progress-bar-green{
+    background-color: #49c555;
+}
+
+.progress-bar-yellow{
+    background-color: #c5c160;
+}
 
 /***********************
 ********* Projects_small ******
@@ -374,7 +385,7 @@ blockquote {
 }
 
 .project_row:hover{
-    opacity: 0.8;
+    opacity: 1.0;
     cursor: pointer;
 }
 
@@ -418,4 +429,59 @@ span.glyphicon-th-list {
     width: 60px;
     height: 0px;
     z-index: 10;
+}
+
+/***********************
+********* Contact Forms ******
+************************/
+input[type="text"], input[type="email"], textarea, .form-input {
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    background-color: #EEE;
+    border: 1px solid #454545;
+    margin: 0 0 30px 0;
+    -moz-box-shadow: transparent 0px 0px 3px;
+    -webkit-box-shadow: transparent 0px 0px 3px;
+    box-shadow: transparent 0px 0px 3px;
+}
+
+.contact-title {
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 0 90px 0;
+    width: 100%;
+}
+
+.contact-title.left {
+    text-align: left;
+}
+input[type="submit"], .main-button {
+    border: none;
+    display: inline-block;
+    background-color: #454545;
+    color: white;
+    padding: 12px 20px;
+    font-family: "Open Sans", Helvetica, Arial, Heveltica Neue, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.contact-info ul li i {
+    margin-left: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+#contact-icon{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 80px;
 }

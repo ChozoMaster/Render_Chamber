@@ -51,74 +51,130 @@
 
 <body>
 <div id="wrap">
-    <div id="main">
-        <header id="header">
-            <nav class="navbar navbar-inverse">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Dennis Basgier</a></div>
+    <header id="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dennis Basgier</a></div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="cv.html">CV</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html" class="last">Contact<span class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li class="active"><a href="contact.html" class="last">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </header><!--/header-->
-        <div class="row-fluid">
-            <div class="span6">
-                <!-- ===========================
-                HEADER
-                ============================ -->
-                <div class="inner-page contact-us">
-                    <div class="container">
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header><!--/header-->
+    <div id="main">
+        <div id="padded-content">
+            <div class="container">
+                <hr>
+                <div class="row-fluid">
+                    <div class="span6">
 
-                        <div class="header-intro">
-                            <h2>Contact Me</h2>
+                        <div class="col-md-6">
+                            <h1>Contact Me</h1>
                             <p>If there are further questions feel free to contact me.</p>
-
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="contact-info">
+                                        <ul>
+                                            <li><span class="glyphicon glyphicon-map-marker"
+                                                      style="padding-right: 10px"></span>Frankfurt,Hessen,Germany
+                                            </li>
+                                            <li><span class="glyphicon glyphicon-envelope"
+                                                      style="padding-right: 10px"></span><a target="_blank"
+                                                                                            href="mailto:">dennis.basgier@gmail.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="span6">
+                                        <div class="col-md-6 col-md-offset-3 text-center">
+                                            <a target="_blank" href="https://www.xing.com/profile/Dennis_Basgier"><img id="contact-icon" src="img/xing_icon.png" title="Xing"></span></a>
+                                            <a target="_blank" href="#"><img id="contact-icon" src="img/github_icon.png" title="Github"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="E-Mail">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                                <button class="send">Send</button>
+
+                        <div class="col-md-6">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="col-md-6">
+                                        <label for="email">Name</label>
+                                        <input type="text" class="form-input" name="name" id="name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email">Subject</label>
+                                        <input type="text" class="form-input" name="subject" id="subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="col-md-12"><label for="message">Message</label>
+                                            <textarea rows="6" id="message" name="message"
+                                                      class="form-input"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="col-md-12">
+                                        <button class="main-button" type="submit"
+                                                onclick="sendMail(); return false">Send Message
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div><!--container end-->
             </div>
-        </div><!--container end-->
-    </div>
+        </div>
+    </div><!--container end-->
 </div>
-    <!-- ===========================
-     FOOTER
-     =========================== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2015 Created by Dennis Basgier. All Rights Reserved.
-                </div>
+<!-- ===========================
+ FOOTER
+ =========================== -->
+<!-- ===========================
+FOOTER
+=========================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row vertical-align">
+            <div class="col-sm-6 pull-left">
+                &copy; 2015 Created by Dennis Basgier. All Rights Reserved.
+            </div>
+            <div class="col-md-3 col-md-offset-3 text-right">
+                <a href="contact.html"><img class="footer-image" src="img/Email_icon.png" title="Email"></span></a>
+                <a target="_blank" href="https://www.xing.com/profile/Dennis_Basgier"><img class="footer-image"
+                                                                                           src="img/xing_icon.png"
+                                                                                           title="Xing"></span></a>
+                <a target="_blank" href="#"><img class="footer-image" src="img/github_icon.png"
+                                                 title="Github"></span></a>
             </div>
         </div>
-    </footer><!--/#footer-->
+    </div>
+</footer><!--/#footer-->
 </body>
 
 <!--necessary scripts and plugins-->

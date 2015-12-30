@@ -24,7 +24,7 @@ $('.progress-bar').each(function () {
 
     var $bar = $(this) ;
     var bar_value = $bar.attr('aria-valuenow') + '%';
-    $bar.animate({ width: bar_value }, 2000, 'easeInBounce', function() {
+    $bar.animate({ width: bar_value }, 500, 'easeInBounce', function() {
         $bar.text(bar_value);
      });
 });
@@ -36,13 +36,13 @@ $("#special_href").click(function() {
 
 // Shorthand for $( document ).ready()
 $(function() {
-    var $width = $( window ).width();
-    if($width < 1000)
-    document.location.href='contact.html';
+    //var $width = $( window ).width();
+   // if($width < 1000)
+    //document.location.href='contact.html';
 });
 
 $( window ).resize(function() {
-    var $width = $( window ).width();
-    if($width < 1000)
+   // var $width = $( window ).width();
+  //  if($width < 1000)
     //    document.location.href='contact.html';
 });
