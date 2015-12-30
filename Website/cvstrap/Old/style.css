@@ -1,0 +1,417 @@
+html,body {
+    background: #f4f4f4;
+    color: #757575;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 2px;
+    height: 100%;
+}
+
+img {
+    max-width: 100%
+}
+
+.propic {
+    border-radius: 10px;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    background: #fcfcfc;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 0;
+}
+
+h4 {
+    margin: 15px 0 0;
+}
+
+p,
+a {
+    line-height: 1.7em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+li {
+    padding: 7px 0;
+}
+
+.dl-share .btn {
+    min-width: 120px;
+}
+
+.signature {
+    font-family: 'Kristi', cursive;
+    color: #3e3f40;
+    font-size: 2.2em;
+    margin-top: 20px;
+}
+
+.social {
+    margin-right: 7px;
+}
+
+.btn .fa {
+    margin-right: 10px;
+}
+
+.secicon.fa {
+    font-size: 28px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.sub {
+    margin-bottom: 15px;
+}
+
+.award {
+    padding-top: 20px;
+}
+
+blockquote {
+    font-size: 1em;
+    padding: 0 15px;
+    margin: 30px 0;
+}
+
+.mainleft {
+    padding-right: 30px;
+}
+
+.testimonials img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-top: -10px;
+    border: 1px solid #ededed;
+}
+
+.year,
+.share {
+    text-align: right;
+}
+
+/*  Home/portfolio  */
+.main .projects{
+    display: block;
+    width: 33.33333333333333%;
+    height: auto;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .projects .media{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.main .projects .caption{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: #ffffff;
+    opacity: 0;
+}
+
+
+.main .projects a:hover .caption{
+    opacity: 0.8;
+}
+
+
+.projects .caption .work_title{
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -40px;
+}
+
+
+.main .projects .caption h1{
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    padding: 20px 0;
+    z-index: 77;
+    color: #454545;
+    font-family: "raleway-regular", arial;
+    font-size: 16px;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #bfbbbb;
+    border-top: 1px solid #bfbbbb;
+}
+
+.content{
+    padding-left: 100px;
+}
+/***********************
+********* Utility ******
+************************/
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    /*Cause footer to stick to bottom in IE 6*/
+    height: 100%;
+    margin: 0 auto -30px;
+    /*Allow for footer height*/
+    vertical-align:bottom;
+}
+
+#main {
+    overflow:auto;
+    padding-bottom:0px; /* this needs to be bigger than footer height*/
+}
+/***********************
+********* Footer ******
+************************/
+
+#footerPush {
+    height: 65px;
+}
+
+.footer {
+    position: relative;
+    margin-bottom: -80px; /* negative value of footer height */
+    clear:both;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background: #2e2e2e;
+    border-top: 5px solid #C52D2F;
+
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #c52d2f;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul > li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.footer .footer_text {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.footer .footer-image {
+    height: 40px;
+    color:inherit;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+/***********************
+********* Nav-bar ******
+************************/
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    background: #151515;
+    padding-bottom: 0;
+}
+
+.navbar-nav{
+}
+
+.navbar-nav>li{
+    margin-left: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    padding: 15px 20px;
+    margin: 0;
+    border-radius: 0px;
+    color: #fff;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    background-color: #fff;
+    color: #2e2e2e;
+}
+
+.navbar-inverse {
+    border: none;
+    background: #2e2e2e;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #fff;
+    color: #2e2e2e;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu {
+    background-color: rgba(0,0,0,.85);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    border-top: 0;
+    border-radius: 0;
+    left: 0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu:before{
+    position: absolute;
+    top:0;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li > a {
+    padding: 0px 15px;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+    background-color: #c52d2f;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-top: 0;
+    padding-bottom: 0;
+}
+
+/***********************
+********* Progress-Bar ******
+************************/
+
+.progress-bar-test{
+    background-color: #c52d2f;
+}
+
+
+/***********************
+********* Projects_small ******
+************************/
+
+
+
+
+ .project_row{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.project_row:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.project_row h1{
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    padding: 20px 0;
+    z-index: 77;
+    color: #454545;
+    font-family: "raleway-regular", arial;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+/***********************
+********* CUSTOM BOOTSTRAP ******
+************************/
+.row_outlined{
+    border-bottom: 1px solid #bfbbbb;
+}
+
+iframe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+span.glyphicon-th {
+    font-size: 1.5em;
+}
+
+span.glyphicon-th-list {
+    font-size: 1.5em;
+}
+/***********************
+********* Overlays ******
+************************/
+.overlay_test{
+    position: absolute;
+    margin-top: 78px;
+    margin-left: 10px;
+
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 20px;
+    z-index: 10;
+}
