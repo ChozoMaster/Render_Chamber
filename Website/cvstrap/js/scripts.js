@@ -34,6 +34,15 @@ $("#special_href").click(function() {
     document.location.href='contact.html';
 });
 
+function sendMail() {
+    var link = "mailto:me@example.com"
+            + "?cc="
+            + "&subject=" +  document.getElementById('subject').value
+            + "&body="  + document.getElementById('messageText').value
+        ;
+    window.location.href = link;
+}
+
 // Shorthand for $( document ).ready()
 $(function() {
     //var $width = $( window ).width();
