@@ -1,9 +1,14 @@
 html,body {
     background: #f4f4f4;
-    color: #757575;
-    font-family: 'Alegreya Sans', sans-serif;
-    letter-spacing: 2px;
+    color: #6b6b6b;
+    font-family: 'Slabo 27px', serif;
+    letter-spacing: 1.0px;
     height: 100%;
+}
+
+a[href $='.pdf'] {
+    padding-right: 18px;
+    background: transparent url('../img/pdf_icon.gif') no-repeat center right;
 }
 
 body:before {
@@ -72,7 +77,7 @@ li {
 .signature {
     font-family: 'Youngranger';
     /*font-family: 'Kristi', cursive;*/
-    color: #3e3f40;
+    color: #000000;
     font-size: 3.5em;
     margin-top: 20px;
 }
@@ -137,6 +142,7 @@ blockquote {
 .main .projects .media{
     width: 100%;
     vertical-align: middle;
+    text-align: center;
 }
 
 .main .projects .caption{
@@ -182,6 +188,7 @@ blockquote {
 
 #padded-content{
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 /***********************
 ********* Utility ******
@@ -487,4 +494,22 @@ input[type="submit"], .main-button {
     padding-left: 10px;
     padding-top: 10px;
     width: 80px;
+}
+
+/***********************
+********* CV Stylez ******
+************************/
+.cv-details{
+}
+.cv-details span {
+    cursor: pointer;
+
+}
+.cv-details span:hover {
+    color: red;
+}
+
+.cv-container{
+    margin-top: 25px;
+    border-top: 2px solid #bfbbbb;
 }
