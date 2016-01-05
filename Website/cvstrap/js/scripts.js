@@ -55,3 +55,13 @@ $( window ).resize(function() {
   //  if($width < 1000)
     //    document.location.href='contact.html';
 });
+
+$(document).ready(function() {
+    $("#fancyimg").fancybox({
+        helpers: {
+            title: {
+                type: 'float'
+            }
+        }
+    });
+});

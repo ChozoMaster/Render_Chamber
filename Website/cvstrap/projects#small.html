@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen"/>
 
 
     <!-- ===========================
@@ -53,122 +54,260 @@
 
 <body>
 <div id="wrap">
-        <header id="header">
-            <nav class="navbar navbar-inverse">
-                <div class="container navbar-container">
+    <header id="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container navbar-container">
 
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Dennis Basgier</a></div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Dennis Basgier</a></div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="cv.html">CV</a></li>
-                            <li class="active"><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html" class="last">Contact<span class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li class="active"><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html" class="last">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </header><!--/header-->
-
-        <!-- Projects start -->
-    <div id="main">
-        <div class="row-fluid ">
-            <!-- Overlay start-->
-            <div class="overlay_test">
-                <a href = "projects.html" style="color:inherit; text-decoration: none;"><span class="glyphicon glyphicon-th"></span></a>
-                <a href = "projects%23small.html" style="color:inherit; text-decoration: none;"><span class="glyphicon glyphicon-th-list"></span></a>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- Overlay end-->
-            <div class="span6">
-                <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo">
-                   <h1 >PROJECT ONE</h1>
-                    <div id="demo" class="collapse">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
-                                <img src="img/BA/Thumbnail.png" alt="">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Nw9yt2ctl3A" frameborder="0" allowfullscreen></iframe>
-                                <h4>General Information:</h4>
-                                <p>
-                                    Serious Games was a project course at TU Darmstadt. In groups of 2-4 students we had
-                                    to work
-                                    on different projects. We chose to create a visual analysis tool for mentoring
-                                    collaborative
-                                    multiplayer games. Therefore we created a log file format which our software is able
-                                    to
-                                    process and then display with the ability to interact with the data. The use case
-                                    was a game
-                                    called
-                                    "Escape from Wilson Island" where 4 players had to work together to survive and
-                                    build a boat
-                                    to leave the island.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo2">
-                   <h1>PROJECT TWO</h1>
-                    <div id="demo2" class="collapse">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
-                                <img src="img/work1.jpg" alt="">
-                                <h4>General Information:</h4>
-                                <p>
-                                    Serious Games was a project course at TU Darmstadt. In groups of 2-4 students we had
-                                    to work
-                                    on different projects. We chose to create a visual analysis tool for mentoring
-                                    collaborative
-                                    multiplayer games. Therefore we created a log file format which our software is able
-                                    to
-                                    process and then display with the ability to interact with the data. The use case
-                                    was a game
-                                    called
-                                    "Escape from Wilson Island" where 4 players had to work together to survive and
-                                    build a boat
-                                    to leave the island.
-                                </p><h4>Our Tasks:</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo3">
-                    <h1>PROJECT THREE</h1>
-                    <div id="demo3" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-                <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo4">
-                    <h1>PROJECT FOUR</h1>
-                    <div id="demo4" class="collapse">
-                        Lorem ipsum dolor text....
-                    </div>
-                </div>
-                <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo5">
-                   <h1>PROJECT FIVE</h1>
-                    <div id="demo5" class="collapse">
-                        Lorem ipsum dolor text....
+            <!-- /.container-fluid -->
+        </nav>
+    </header><!--/header-->
+
+    <!-- Projects start -->
+
+    <div id="main">
+        <div class="overlay_test">
+            <a href="projects.html" style="color:inherit; text-decoration: none;"><span
+                    class="glyphicon glyphicon-th"></span></a>
+            <a href="projects%23small.html" style="color:inherit; text-decoration: none;"><span
+                    class="glyphicon glyphicon-th-list"></span></a>
+        </div>
+        <!-- Overlay end-->
+        <!-- BSC SPAN-->
+        <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo2"><h1>MASTER
+            THESIS</h1></div>
+        <div class="col-md-12">
+
+            <div id="demo2" class="collapse">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <a id="fancyimg" href="img/MA/Phong_Comparison.png"
+                           title="Phong Shading enhanced with Ambient Occlusion"><img src="img/MA/Phong_Comparison.png"
+                                                                                      alt=""
+                                                                                      style="padding-bottom: 20px"/></a>
+                        <a id="fancyimg" href="img/MA/RayTracing_Comparison.png"
+                           title="Visual Comparison with a Ray Tracing alternative"><img
+                                src="img/MA/RayTracing_Comparison.png" alt="" style="padding-bottom: 20px"/></a>
+                        <a id="fancyimg" href="img/MA/Voxelization.png"
+                           title="Real-Time Voxelization Result. Visualization via direct volume rendering"><img
+                                src="img/MA/Voxelization.png" alt="" style="padding-bottom: 20px"/></a>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AdF9rW1Utj0" frameborder="0"
+                                allowfullscreen></iframe>
+                        <h3>About:</h3>
+                        <p>
+                            Ambient occlusion (AO) is a relatively fast way to obtain small scale shadows which help
+                            to visually indicate curvature and spatial relationships. The industry standard to calculate
+                            this visual phenomenon is
+                            screen-space ambient occlusion (SSAO). Although many approaches in screen-space exist, the
+                            quality is still inferior to non-local
+                            techniques due to systematic errors.
+                            <br>
+                            This work revisited approximate voxel cone tracing, which is a non-local approach introduced
+                            by
+                            Crassin et al. in the year 2011. It supports real-time frame rates in semi dynamic scenes,
+                            which
+                            means, that geometric objects in the scene are previously classified as static or dynamic.
+                            The
+                            example scenes used by Crassin et al. usually feature a much larger amount of static than
+                            dynamic
+                            geometry. The goal of this work was to test and adapt the method for ambient occlusion
+                            in full dynamic scenes, without distinguishing between static or dynamic geometry. <a
+                                href="files/msc_basgier.pdf">(Download)</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Projects end -->
 
+        <!-- BSC SPAN-->
+        <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo"><h1>BACHELOR
+            THESIS</h1></div>
+        <div class="col-md-12">
+            <div id="demo" class="collapse">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <a id="fancyimg" href="img/BA/AlgoDetails.png" title="Grid View"><img
+                                src="img/BA/AlgoDetails.png" alt="" style="padding-bottom: 30px"></a>
+                        <a id="fancyimg" href="img/BA/AlgoGrid.png" title="Clustering + Details on demand"><img
+                                src="img/BA/AlgoGrid.png" alt=""/></a>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Nw9yt2ctl3A" frameborder="0"
+                                allowfullscreen></iframe>
+                        <h3>About:</h3>
+                        <p>
+                            The Bachelor-Thesis presents a new interactive system for visual and exploratory
+                            analysis
+                            of local correspondence in segmentation quality. Segmentations of several samples of
+                            one
+                            organ are analyzed on the basis of pairwise distances between a reference- and a
+                            test- mesh,
+                            which is extracted from the organ segmentation. The tool features several views on
+                            the data
+                            (Coloring, threshold based highlighting, average mesh visualization) and a set of
+                            analysis methods (clustering, cluster quality evaluation, dimension reduction) to extract
+                            new
+                            information,
+                            such as reoccurring regions or patterns of low quality segmentation. Segmentation
+                            algorithm developer can use the visual information for gaining knowledge on how
+                            their
+                            algorithms work. This insight can be beneficial to the improvement of the
+                            algorithms.
+                            The software is optimized for analyzing medical image segmentation, but can also be
+                            translated
+                            to countless domains, as it simply operates on the extracted mesh data. <a
+                                href="files/bsc_Basgier.pdf">(Download)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PBA SPAN-->
+        <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo3"><h1>Physically-based
+            animation</h1></div>
+        <div class="col-md-12">
+            <div id="demo3" class="collapse">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <a id="fancyimg" href="img/PBA/Collision.PNG"
+                           title="Soft bodies and cloth colliding with each other"><img src="img/PBA/Collision.PNG"
+                                                                                        alt=""
+                                                                                        style="padding-bottom: 20px"/></a>
+                        <a id="fancyimg" href="img/PBA/HairSim.PNG" title="Hair simulation"><img
+                                src="img/PBA/HairSim.PNG" alt="" style="padding-bottom: 20px"/></a>
+                        <a id="fancyimg" href="img/PBA/Collision2.PNG" title="Collision of a projectile with cloth"><img
+                                src="img/PBA/Collision2.PNG" alt="" style="padding-bottom: 20px"/></a>
+                        <h3>About:</h3>
+                        <p>
+                            Physically based animation was a course at TU Darmstadt, which was accompanied by several
+                            practical projects.
+                            In groups of 2-4 students we had to develop our own simulation engine in C++. The subject of
+                            study were particle and particle systems,
+                            which are the basis of modern smoke or water simulation. Furthermore rigid bodies and
+                            multi-body system were discussed. With the theoretical background we programmed several
+                            small simulations, which covered:
+                        <ul>
+                            <li>Simulation of a solar system</li>
+                            <li>Hair simulation</li>
+                            <li>Deformable soft bodies</li>
+                            <li>Collision detection</li>
+                            <li>Cloth Simulation</li>
+                            <li>Mass-spring-systems</li>
+                        </ul>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SG SPAN-->
+        <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo4"><h1>Serious
+            Games</h1></div>
+        <div class="col-md-12">
+            <div id="demo4" class="collapse">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <a id="fancyimg" href="img/CV/CV21.png" title="Automatic image inpainting"><img
+                                src="img/CV/CV21.png" alt=""/></a>
+                        <a id="fancyimg" href="img/SG/DataStructure.png" title="Mockup of the generic log format"><img
+                                src="img/SG/DataStructure.png" alt="" style="padding-top: 20px"/></a>
+                        <h3>About:</h3>
+                        <p>
+                            Serious Games was a project course at TU Darmstadt. In groups of 2-4 students we had to work
+                            on different projects. We chose to create a visual analysis tool in C# for mentoring
+                            collaborative
+                            multiplayer games. Therefore we created a generic log file format which our software is able
+                            to
+                            process and then display with the ability to interact with the data. The use case was a game
+                            called
+                            "Escape from Wilson Island" where 4 players had to work together to survive and build a boat
+                            to leave the island.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MESO SPAN-->
+        <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo5"><h1>Meso
+            Scanner</h1></div>
+        <div class="col-md-12">
+            <div id="demo5" class="collapse">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <a id="fancyimg" href="img/SG/GUI.png" title="GUI for interactive analysis"><img
+                                src="img/SG/GUI.png" alt=""/></a>
+                        <a id="fancyimg" href="img/SG/DataStructure.png" title="Mockup of the generic log format"><img
+                                src="img/SG/DataStructure.png" alt="" style="padding-top: 20px"/></a>
+                        <h3>About:</h3>
+                        <p>
+                            blabla
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV SPAN-->
+        <div class="col-md-12 project_row row_outlined" data-toggle="collapse" data-target="#demo6"><h1>Computer
+            Vision</h1></div>
+        <div class="col-md-12">
+            <div id="demo6" class="collapse">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4" style="text-align: center;">
+                        <a id="fancyimg" href="img/CV/Thumbnail.gif" title="Real-time object Tracking"><img
+                                src="img/CV/Thumbnail.gif" alt=""/></a>
+                        <a id="fancyimg" href="img/CV/CV21.png" title="Automatic image inpainting"><img
+                                src="img/CV/CV21.png" alt=""/></a>
+                        <a id="fancyimg" href="img/CV/cv11.png" title="Feature Detection"><img src="img/CV/cv11.png"
+                                                                                               alt=""/></a>
+
+                        <h3>About:</h3>
+                        <p>
+                            Computer Vision I & II are courses at TU Darmstadt with programming exercises for groups of
+                            two students.
+                            We had to implement classical and modern image processing and computer vision algorithms
+                            with Matlab. Our tasks included:
+                        <ul>
+                            <li>Perform image sharpening with Gaussian and Laplacian image pyramids</li>
+                            <li>Detect points of interest in an image by implementing a Harris feature detector</li>
+                            <li>Classify images with a bag of visual words approach</li>
+                            <li>Realize image denoising and in-painting with Markov random fields</li>
+                            <li>Track a moving object in a video using Kalman filter</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dummy Row for border-->
+        <div class="col-md-12 project_row row_outlined"></div>
     </div>
+    <!-- Projects end -->
 </div>
 
 <!-- ===========================
@@ -181,9 +320,9 @@ FOOTER
                 &copy; 2015 Created by Dennis Basgier. All Rights Reserved.
             </div>
             <div class="col-md-3 col-md-offset-3 text-right">
-                <a href = "contact.html"><img class="footer-image" src="img/Email_icon.png" title="Email"></span></a>
-                <a href = "#"><img class="footer-image" src="img/xing_icon.png" title="Xing"></span></a>
-                <a href = "#"><img class="footer-image" src="img/github_icon.png" title="Github"></span></a>
+                <a href="contact.html"><img class="footer-image" src="img/Email_icon.png" title="Email"></span></a>
+                <a href="#"><img class="footer-image" src="img/xing_icon.png" title="Xing"></span></a>
+                <a href="#"><img class="footer-image" src="img/github_icon.png" title="Github"></span></a>
             </div>
         </div>
     </div>
@@ -195,6 +334,6 @@ FOOTER
 <script src="js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/evenfly.js"></script>
 <script src="js/scripts.js"></script>
+<script src="fancybox/jquery.fancybox.js"></script>
 </html>
