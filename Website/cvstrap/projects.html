@@ -16,6 +16,17 @@
     <meta name="author" content="Dennis Basgier">
 
     <!-- ===========================
+        REDIRECT FOR MOBILE DEVICEs
+       =========================== -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+         var $width = $( window ).width();
+          if($width < 1000 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+            document.location.href='projects_mobile.html';
+    </script>
+
+
+    <!-- ===========================
     SITE TITLE
     =========================== -->
     <title>Dennis Basgier - Personal Web Portal</title>
@@ -92,7 +103,7 @@
         <div class="overlay_test">
             <a href="projects.html" style="color:inherit; text-decoration: none;"><span
                     class="glyphicon glyphicon-th"></span></a>
-            <a href="projects%23small.html" style="color:inherit; text-decoration: none;"><span
+            <a href="projects_mobile.html" style="color:inherit; text-decoration: none;"><span
                     class="glyphicon glyphicon-th-list"></span></a>
         </div>
         <!-- Overlay end-->
@@ -133,22 +144,11 @@
             </div>
 
             <div class="projects">
-                <img src="img/SG/Thumbnail.png" class="media" alt=""/>
-                <a href="#" data-toggle="modal" data-target="#sgModal">
+                <img src="img/Meso/Thumbnail.png" class="media" alt=""/>
+                <a data-toggle="modal" data-target="#mesoModal" style="cursor:pointer;">
                     <div class="caption">
                         <div class="work_title">
-                            <h1>Serious Games</h1>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projects">
-                <a href="inner.html">
-                    <img src="img/work6.jpg" class="media" alt=""/>
-                    <div class="caption">
-                        <div class="work_title">
-                            <h1>Meso Scanner</h1>
+                            <h1>3D Scanning</h1>
                         </div>
                     </div>
                 </a>
@@ -164,6 +164,18 @@
                     </div>
                 </a>
             </div>
+
+            <div class="projects">
+                <img src="img/SG/Thumbnail.png" class="media" alt=""/>
+                <a href="#" data-toggle="modal" data-target="#sgModal">
+                    <div class="caption">
+                        <div class="work_title">
+                            <h1>Serious Games</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </section>
     </div>
 </div>
@@ -280,13 +292,13 @@ HIDDEN CONTENT -- MODALS
                         <div class="col-md-6">
                             <div class="row-fluid">
                                 <div class="col-md-12">
-                                    <a id="fancyimg" href="img/MA/Phong_Comparison.png" title="Phong Shading enhanced with Ambient Occlusion"><img src="img/MA/Phong_Comparison.png" alt="" style="padding-bottom: 20px" /></a>
+                                    <a id="fancyimg" href="img/MA/Phong_Comparison.png" title="Phong Shading enhanced with Ambient Occlusion"><img src="img/MA/Phong_Comparison.png" alt="" style="padding-bottom: 80px" /></a>
                                 </div>
                                 <div class="col-md-12">
-                                    <a id="fancyimg" href="img/MA/RayTracing_Comparison.png" title="Visual Comparison with a Ray Tracing alternative"><img src="img/MA/RayTracing_Comparison.png" alt="" style="padding-bottom: 20px" /></a>
+                                    <a id="fancyimg" href="img/MA/RayTracing_Comparison.png" title="Visual Comparison with a Ray Tracing alternative"><img src="img/MA/RayTracing_Comparison.png" alt="" style="padding-bottom: 80px" /></a>
                                 </div>
-                                <div class="col-md-6 col-md-offset-4">
-                                    <a id="fancyimg" href="img/MA/Voxelization.png" title="Real-Time Voxelization Result. Visualization via direct volume rendering"><img src="img/MA/Voxelization.png" alt="" style="padding-bottom: 20px" /></a>
+                                <div class="col-md-12">
+                                    <a id="fancyimg" href="img/MA/Voxelization.png" title="Real-Time Voxelization Result. Visualization via direct volume rendering"><img src="img/MA/Voxelization.png" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -359,8 +371,8 @@ HIDDEN CONTENT -- MODALS
                                     <p>
                                         Physically based animation was a course at TU Darmstadt, which was accompanied by several practical projects.
                                         In groups of 2-4 students we had to develop our own simulation engine in C++. The subject of study were particle and particle systems,
-                                        which are the basis of modern smoke or water simulation. Furthermore rigid bodies and multi-body system were discussed. With the theoretical background we programmed several
-                                        small simulations, which covered:
+                                        which are the basis of modern smoke or water simulation. Furthermore rigid bodies and multi-body-systems were discussed. With the theoretical background we programmed several
+                                        simulations, which covered:
                                     <ul>
                                         <li>Simulation of a solar system</li>
                                         <li>Hair simulation</li>
@@ -445,7 +457,7 @@ HIDDEN CONTENT -- MODALS
 </div>
 </div>
 
-<!--SG MODAL-->
+<!--CV MODAL-->
 <div class="modal fade bs-example-modal-lg in" id="cvModal" tabindex="-1" role="dialog"
      aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog modal-lg" style="width: 85%">
@@ -506,15 +518,88 @@ HIDDEN CONTENT -- MODALS
         </div>
     </div>
 </div>
+
+<!--Meso MODAL-->
+<div class="modal fade bs-example-modal-lg in" id="mesoModal" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg" style="width: 85%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h2 class="modal-title animated-item feature-item fadeInUp animated" data-delay="300"
+                    id="gridSystemModalLabel">3D Scanner</h2>
+            </div>
+            <div class="modal-body animated-item feature-item fadeInUp animated" data-delay="300">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="col-md-6">
+                            <div class="row-fluid">
+                                <div class="col-md-12" style="text-align: center;">
+                                    <a id="fancyimg" href="img/Meso/Thumbnail.png" title="3D Scan of a leaf, with texture and without texture"><img src="img/Meso/Thumbnail.png" alt=""/></a>
+                                </div>
+                                <div class="col-md-12">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="row-fluid">
+                                <div class=" col-md-11 col-md-offset-1" data-delay="300" >
+                                    <h3>About:</h3>
+                                    <p>
+                                        Computer Vision I & II are courses at TU Darmstadt with programming exercises for groups of two students.
+                                        We had to implement classical and modern image processing and computer vision algorithms with Matlab. Our tasks included:
+                                    <ul>
+                                        <li>Perform image sharpening with Gaussian and Laplacian image pyramids</li>
+                                        <li>Detect points of interest in an image by implementing a Harris feature detector</li>
+                                        <li>Classify images with a bag of visual words approach</li>
+                                        <li>Realize image denoising and in-painting with Markov random fields</li>
+                                        <li>Track a moving object in a video using Kalman filter</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class=" col-md-11 col-md-offset-1" >
+                                    <div class="col-md-12">
+                                        <a id="fancyimg" href="img/CV/CV21.png" title="Automatic image inpainting"><img src="img/CV/CV21.png" alt=""/></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </div>
 
 
 </body>
-<script src="js/jquery.min.js"></script>
+<!--necessary scripts and plugins-->
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/evenfly.js"></script>
-<script src="js/scripts.js"></script>
 <script src="fancybox/jquery.fancybox.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#fancyimg").fancybox({
+            helpers: {
+                title: {
+                    type: 'float'
+                }
+            }
+        });
+    });
+</script>
 
 </html>

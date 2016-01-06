@@ -213,8 +213,12 @@
                                                     Heritage Digitization</a>.
                                                 Henceforth I was responsible for the development of the second version
                                                 of the <i>Meso Scanner</i>, which features high performance industrial
-                                                cameras and an overall more sophisticated setup. Additionally
-                                                I supported the development of utility libraries for our department.</p>
+                                                cameras and an overall more sophisticated setup. My tasks were camera
+                                                calibration, GUI design,
+                                                image processing and GPGPU programming to speed up the reconstruction
+                                                algorithms.
+                                                Additionally I supported the development of utility libraries for our
+                                                department.</p>
                                         </div>
 
                                         <div class="year col-md-3">
@@ -310,7 +314,8 @@
                             </div><!--tech skills end-->
                             <div class="row mobmid">
                                 <div class="col-md-10 col-md-offset-2">
-                                    <div data-toggle="collapse" data-target="#demo" style="cursor:pointer;">Details <span class="fa fa-chevron-down"></span>
+                                    <div data-toggle="collapse" data-target="#demo" style="cursor:pointer;">Details
+                                        <span class="fa fa-chevron-down"></span>
                                     </div>
                                     <div id="demo" class="collapse"><p><b>Expertise</b> - Proficiency</p>
 
@@ -319,19 +324,21 @@
                                             <tr>
                                                 <td valign="top">Languages:</td>
                                                 <td style="padding-left:10px;">
-                                                    <b>C/C++, Matlab, GLSL</b>, C#, Java, HTML/CSS, MySQL, LUA, Python
+                                                    <b>C/C++, Matlab, GLSL, HTML/CSS</b>, C#, Java, MySQL, LUA, Python
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td valign="top">Software:</td>
                                                 <td style="padding-left:10px;">
-                                                    <b>Microsoft Visual Studio</b>, Photoshop, Illustrator, Unity Engine, Unreal Engine, Blender
+                                                    <b>Microsoft Visual Studio</b>, Photoshop, Illustrator, Unity
+                                                    Engine, Unreal Engine, Blender
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td valign="top">Toolkits:</td>
                                                 <td style="padding-left:10px;">
-                                                    <b>QT, OpenCL, OpenGL, Compute Shader, Boost, CMake</b>, vtk, CUDA, OpenMP
+                                                    <b>QT, OpenCL, OpenGL, Compute Shader, Boost, CMake</b>, vtk, CUDA,
+                                                    OpenMP
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -401,5 +408,13 @@ FOOTER
 <!--necessary scripts and plugins-->
 <script src="js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script>
+    $('.progress-bar').each(function () {
+        var $bar = $(this);
+        var bar_value = $bar.attr('aria-valuenow') + '%';
+        $bar.animate({width: bar_value}, 500, 'linear', function () {
+            $bar.text(bar_value);
+        });
+    });
+</script>
 </html>
