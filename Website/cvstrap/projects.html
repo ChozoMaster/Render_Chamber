@@ -41,7 +41,6 @@
     =========================== -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
 
 
@@ -137,7 +136,7 @@
                 <a href="#" data-toggle="modal" data-target="#PBAModal">
                     <div class="caption">
                         <div class="work_title">
-                            <h1>Physically-Based Animation & Multi-Body-Systems</h1>
+                            <h1>Physically-based Animation & Multibody Systems</h1>
                         </div>
                     </div>
                 </a>
@@ -187,13 +186,13 @@ FOOTER
 <footer class="footer">
     <div class="container">
         <div class="row vertical-align">
-            <div class="col-sm-6 pull-left">
-                &copy; 2015 Created by Dennis Basgier. All Rights Reserved.
+            <div class="col-sm-8 pull-left">
+                &copy; 2015 Created by Dennis Basgier.
             </div>
-            <div class="col-md-3 col-md-offset-3 text-right">
+            <div class="col-md-4 col-sm-4 text-right">
                 <a href="contact.html"><img class="footer-image" src="img/Email_icon.png" title="Email"></span></a>
-                <a href="#"><img class="footer-image" src="img/xing_icon.png" title="Xing"></span></a>
-                <a href="#"><img class="footer-image" src="img/github_icon.png" title="Github"></span></a>
+                <a target="_blank" href="https://www.xing.com/profile/Dennis_Basgier"><img class="footer-image" src="img/xing_icon.png" title="Xing"></span></a>
+                <a target="_blank" href="https://github.com/ChozoMaster/Render_Chamber"><img class="footer-image" src="img/github_icon.png" title="Github"></span></a>
             </div>
         </div>
     </div>
@@ -348,8 +347,7 @@ HIDDEN CONTENT -- MODALS
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">×</span></button>
                 <h2 class="modal-title animated-item feature-item fadeInUp animated" data-delay="300"
-                    id="gridSystemModalLabel">Physically-based Animation & Multi-Body-Systems
-                    Tracing</h2>
+                    id="gridSystemModalLabel">Physically-based Animation & Multibody Systems</h2>
             </div>
             <div class="modal-body animated-item feature-item fadeInUp animated" data-delay="300">
                 <div class="container-fluid">
@@ -371,7 +369,7 @@ HIDDEN CONTENT -- MODALS
                                     <p>
                                         Physically based animation was a course at TU Darmstadt, which was accompanied by several practical projects.
                                         In groups of 2-4 students we had to develop our own simulation engine in C++. The subject of study were particle and particle systems,
-                                        which are the basis of modern smoke or water simulation. Furthermore rigid bodies and multi-body-systems were discussed. With the theoretical background we programmed several
+                                        which are the basis of modern smoke or water simulation. Furthermore rigid bodies and multibody systems were discussed. With the theoretical background we programmed several
                                         simulations, which covered:
                                     <ul>
                                         <li>Simulation of a solar system</li>
@@ -536,10 +534,10 @@ HIDDEN CONTENT -- MODALS
                         <div class="col-md-6">
                             <div class="row-fluid">
                                 <div class="col-md-12" style="text-align: center;">
-                                    <a id="fancyimg" href="img/Meso/Thumbnail.png" title="3D Scan of a leaf, with texture and without texture"><img src="img/Meso/Thumbnail.png" alt=""/></a>
+                                    <a id="fancyimg" href="img/Meso/Objects.png" title="3D scan of a coin"><img src="img/Meso/Objects.png" alt=""/></a>
                                 </div>
                                 <div class="col-md-12">
-
+                                    <a id="fancyimg" href="img/Meso/Thumbnail.png" title="3D Scan of a leaf, with texture and without texture"><img src="img/Meso/Thumbnail.png" alt=""/></a>
                                 </div>
                             </div>
                         </div>
@@ -548,22 +546,18 @@ HIDDEN CONTENT -- MODALS
                                 <div class=" col-md-11 col-md-offset-1" data-delay="300" >
                                     <h3>About:</h3>
                                     <p>
-                                        Computer Vision I & II are courses at TU Darmstadt with programming exercises for groups of two students.
-                                        We had to implement classical and modern image processing and computer vision algorithms with Matlab. Our tasks included:
-                                    <ul>
-                                        <li>Perform image sharpening with Gaussian and Laplacian image pyramids</li>
-                                        <li>Detect points of interest in an image by implementing a Harris feature detector</li>
-                                        <li>Classify images with a bag of visual words approach</li>
-                                        <li>Realize image denoising and in-painting with Markov random fields</li>
-                                        <li>Track a moving object in a video using Kalman filter</li>
-                                    </ul>
+                                       The Meso Scanner is a 3D geometry scanner with a higher resolution than most of its commercial competitors in the same price category, due to
+                                        a unique and novel acquisition technique called lens-shifting. The scanner is based on a classical structured light reconstruction, which already produces accurate results for static objects.
+                                        However the lateral precision is bound to the projectors pixel resolution, therefore a 1D mechanical lens-shifter extension in the projector light path was installed, which shifts the projected
+                                        pattern in subpixel scale steps with a granularity of up to 2048 steps per projected pixel. This enhancement opens up new possibilities in depth accuracy and smoothness
+                                        for the acquired geometry. The results provided a high depth resolution of better than 100 microns, which is exceptional high for the built-in commercial camera and projector.
                                     </p>
                                 </div>
                             </div>
                             <div class="row-fluid">
                                 <div class=" col-md-11 col-md-offset-1" >
                                     <div class="col-md-12">
-                                        <a id="fancyimg" href="img/CV/CV21.png" title="Automatic image inpainting"><img src="img/CV/CV21.png" alt=""/></a>
+                                        <a id="fancyimg" href="img/Meso/setup.png" title="A draft of the lens-shifting idea and the final implementation"><img src="img/Meso/setup.png" alt=""/></a>
                                     </div>
 
                                 </div>
