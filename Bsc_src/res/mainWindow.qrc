@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>scala.png</file>
+    <file>Image4.jpg</file>
+  </qresource>
+</RCC>
