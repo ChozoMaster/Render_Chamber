@@ -16,7 +16,7 @@ endif()
 set(EXECUTABLE_OUTPUT_PATH "${PROJECT_BINARY_DIR}/bin")
 set(LIBRARY_OUTPUT_PATH    "${PROJECT_BINARY_DIR}/bin")
 
-include(IGDVersion)
+include(macros)
 
 add_subdirectory(extern)
 add_subdirectory(glviz)

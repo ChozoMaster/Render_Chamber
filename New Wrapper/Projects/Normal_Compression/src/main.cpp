@@ -17,6 +17,10 @@ void timerFunc(int delta_t_msec)
 {
 
 }
+
+void compressNormals(){
+
+}
 static void TW_CALL setSmoothCallback(const void * value, void * clientData)
 {
 	Parameter::getInstance()->shading_method = *(int *)value;

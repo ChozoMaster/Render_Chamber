@@ -1,4 +1,7 @@
 SUBDIRLIST(subdirectories ${CMAKE_CURRENT_SOURCE_DIR})
 foreach(dir ${subdirectories})
-	add_subdirectory(${dir})
+	OPTION(BUILD_${dir} "Build application projects" OFF)
+	IF(BUILD_${dir})
+		add_subdirectory(${dir})
+	ENDIF()
 endforeach()
